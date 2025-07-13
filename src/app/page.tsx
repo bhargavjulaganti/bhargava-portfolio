@@ -49,62 +49,30 @@ export default function BhargavaPortfolio() {
 
       {/* Hero Section */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          
-          {/* Left Column - Text Content */}
-          <div className="space-y-8">
+        <div className="flex flex-col items-center text-center">
+          {/* Name, Title, Resume Link */}
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight whitespace-nowrap">
+            Bhargava Julaganti
+          </h1>
+          <p className="text-xl text-gray-600 mt-4">Senior Quality Engineer</p>
+          <a
+            href="/resume.pdf"
+            className="text-blue-600 font-semibold text-lg hover:underline flex items-center gap-1 justify-center mt-4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download Resume <Download size={18} className="ml-1" />
+          </a>
+          {/* Skills or Stats */}
+          <div className="grid grid-cols-2 gap-8 pt-8 mt-8">
             <div>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
-                Bhargava Julaganti
-              </h1>
-              <p className="text-xl text-gray-600 mt-4">Senior Quality Engineer</p>
+              <h3 className="text-2xl font-bold text-gray-900">13+</h3>
+              <p className="text-gray-600">Years Experience</p>
             </div>
-
-            <div className="space-y-6">
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Transforming data into the graphical interface & layouts schema for all types of applications.
-              </p>
-
-              <button className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg">
-                <Download size={20} className="mr-2" />
-                Download Resume
-              </button>
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900">50+</h3>
+              <p className="text-gray-600">Projects Completed</p>
             </div>
-
-            {/* Skills or Stats */}
-            <div className="grid grid-cols-2 gap-8 pt-8">
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900">13+</h3>
-                <p className="text-gray-600">Years Experience</p>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900">50+</h3>
-                <p className="text-gray-600">Projects Completed</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column - Profile Image */}
-          <div className="relative">
-            {/* <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-              <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-                alt="Bhargava Julaganti - Senior Quality Engineer"
-                className="w-full h-96 lg:h-[500px] object-cover"
-              /> */}
-              
-              {/* Overlay gradient */}
-              {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-            </div> */}
-
-            {/* Floating elements */}
-            {/* <div className="absolute -top-4 -right-4 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-lg">UI</span>
-            </div> */}
-            
-            {/* <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-sm">UX</span>
-            </div> */}
           </div>
         </div>
 
