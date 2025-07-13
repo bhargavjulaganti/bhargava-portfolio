@@ -11,29 +11,7 @@ export default function BhargavaPortfolio() {
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <span className="text-2xl font-bold text-gray-900">BJ</span>
-            </div>
-            
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8">
-              <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors">Work</a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
-            </nav>
-
-            {/* Mobile menu button */}
-            <button 
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100"
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-        </div>
+       
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
