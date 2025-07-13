@@ -55,9 +55,7 @@ export default function BhargavaPortfolio() {
           <div className="space-y-8">
             <div>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
-                Bhargava
-                <br />
-                Julaganti
+                Bhargava Julaganti
               </h1>
               <p className="text-xl text-gray-600 mt-4">Senior Quality Engineer</p>
             </div>
@@ -113,18 +111,16 @@ export default function BhargavaPortfolio() {
         {/* Resume Section */}
         <section className="mt-24">
           {/* Tab Navigation */}
-          <div className="flex justify-center mb-12">
-            <div className="flex bg-gray-100 rounded-full p-2">
-              <button className="px-6 py-3 bg-blue-500 text-white rounded-full font-medium transition-colors">
-                Resume
-              </button>
-              <button className="px-6 py-3 text-gray-600 hover:text-gray-900 rounded-full font-medium transition-colors">
-                Projects
-              </button>
-              <button className="px-6 py-3 text-gray-600 hover:text-gray-900 rounded-full font-medium transition-colors">
-                Testimonials
-              </button>
-            </div>
+          <div className="flex justify-center mb-12 gap-8">
+            <button className="px-16 py-8 bg-blue-400 text-white rounded-2xl font-bold text-2xl shadow-xl focus:outline-none">
+              Resume
+            </button>
+            <button className="px-16 py-8 bg-white text-gray-600 font-bold text-2xl rounded-2xl shadow-xl focus:outline-none">
+              Projects
+            </button>
+            <button className="px-16 py-8 bg-white text-gray-600 font-bold text-2xl rounded-2xl shadow-xl focus:outline-none">
+              Testimonials
+            </button>
           </div>
 
           {/* Experience Section */}
