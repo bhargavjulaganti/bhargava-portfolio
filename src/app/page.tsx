@@ -52,16 +52,26 @@ export default function BhargavaPortfolio() {
             </p>
           </section>
 
-          {/* Skills or Stats */}
-          <div className="grid grid-cols-2 gap-8 pt-8 mt-8">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900">13+</h3>
-              <p className="text-gray-600">Years Experience</p>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900">50+</h3>
-              <p className="text-gray-600">Projects Completed</p>
-            </div>
+          {/* GitHub and LinkedIn Links */}
+          <div className="flex flex-row gap-8 pt-8 mt-8 justify-center">
+            <a
+              href="https://github.com/bhargavjulaganti"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-gray-900 hover:text-blue-600 text-xl font-semibold transition-colors"
+            >
+              <img src="/github-mark.svg" alt="GitHub" className="w-8 h-8" />
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/bhargav-julaganti-61851016/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-gray-900 hover:text-blue-600 text-xl font-semibold transition-colors"
+            >
+              <img src="/linkedin-icon.svg" alt="LinkedIn" className="w-8 h-8" />
+              LinkedIn
+            </a>
           </div>
         </div>
 
