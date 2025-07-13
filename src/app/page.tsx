@@ -128,61 +128,66 @@ export default function BhargavaPortfolio() {
             <h2 className="text-4xl font-bold text-gray-900 mb-12">Experience</h2>
             
             <div className="space-y-12">
-              {/* Typedream */}
+
+
+              {/* Barnes & Noble */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                 <div className="lg:col-span-3">
-                  <p className="text-gray-600 font-medium">Jun 2022 - Present</p>
+                  <p className="text-gray-600 font-medium">Sep 2017 – Mar 2018</p>
                 </div>
                 <div className="lg:col-span-9">
                   <div className="space-y-4">
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-900">Typedream</h3>
-                      <p className="text-blue-500 font-medium">Senior Developer</p>
+                      <h3 className="text-2xl font-bold text-gray-900">Barnes & Noble</h3>
+                      <p className="text-blue-500 font-medium">Lead Automation Engineer</p>
                     </div>
                     <p className="text-gray-600 leading-relaxed">
-                      Designed and implemented SEO strategies for user acquisition, driving 
-                      acquisition up by an average of 250% each month.
+                       "Led an automation team to develop end-to-end UI regression tests for Barnes & Noble using Selenium and Cucumber.",
+                        "Helped the team replicate production performance issues in lower environments.",
+                        "Worked on creating Test estimations for the automation projects"
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Github */}
+              {/* Meijer */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                 <div className="lg:col-span-3">
-                  <p className="text-gray-600 font-medium">Oct 2021 - May 2022</p>
+                  <p className="text-gray-600 font-medium">June 2016 – Sep 2017</p>
                 </div>
                 <div className="lg:col-span-9">
                   <div className="space-y-4">
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-900">Github</h3>
-                      <p className="text-blue-500 font-medium">Intermediate Developer</p>
+                      <h3 className="text-2xl font-bold text-gray-900">Meijer</h3>
+                      <p className="text-blue-500 font-medium">Lead Automation Engineer</p>
                     </div>
                     <p className="text-gray-600 leading-relaxed">
-                      Create a more efficient bug handler to avoid excessive errors when git commits fail.
+                       "Led the development of an automation framework using Coded UI for point-of-sale systems, reducing testing time by 60% (from 5 days to 2 days) and improving efficiency.",
+                        "Assisted multiple teams in setting up their initial automated tests for WPF applications",
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Microsoft */}
+              {/* Target */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                 <div className="lg:col-span-3">
-                  <p className="text-gray-600 font-medium">Jan 2020 - Sep 2021</p>
+                  <p className="text-gray-600 font-medium">Jan 2015 – June 2016</p>
                 </div>
                 <div className="lg:col-span-9">
                   <div className="space-y-4">
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-900">Microsoft</h3>
-                      <p className="text-blue-500 font-medium">Junior Developer</p>
+                      <h3 className="text-2xl font-bold text-gray-900">Target</h3>
+                      <p className="text-blue-500 font-medium">QA Automation Lead & Tester</p>
                     </div>
                     <p className="text-gray-600 leading-relaxed">
-                      Assist in designing the latest application display structure for Microsoft Teams. 
-                      There I was assigned to implement the design into real apps for online class features.
+                       "Involved in creating end-to-end regression tests using HP UFT & Selenium.",
+                        "Led teams in offshore onsite model in delivering regression automation for multiple projects.",
                     </p>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </section>
