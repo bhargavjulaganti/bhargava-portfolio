@@ -1,10 +1,11 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Download, Menu, X } from 'lucide-react';
 
 export default function BhargavaPortfolio() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState<'resume' | 'projects' | 'testimonials'>('resume');
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -80,84 +81,119 @@ export default function BhargavaPortfolio() {
         <section className="mt-24">
           {/* Tab Navigation */}
           <div className="flex justify-center mb-12 gap-8">
-            <button className="px-16 py-8 bg-blue-400 text-white rounded-2xl font-bold text-2xl shadow-xl focus:outline-none">
+            <button
+              className={`px-16 py-8 rounded-2xl font-bold text-2xl shadow-xl focus:outline-none transition-colors ${activeTab === 'resume' ? 'bg-blue-400 text-white' : 'bg-white text-gray-600'}`}
+              onClick={() => setActiveTab('resume')}
+            >
               Resume
             </button>
-            <button className="px-16 py-8 bg-white text-gray-600 font-bold text-2xl rounded-2xl shadow-xl focus:outline-none">
+            <button
+              className={`px-16 py-8 rounded-2xl font-bold text-2xl shadow-xl focus:outline-none transition-colors ${activeTab === 'projects' ? 'bg-blue-400 text-white' : 'bg-white text-gray-600'}`}
+              onClick={() => setActiveTab('projects')}
+            >
               Projects
             </button>
-            <button className="px-16 py-8 bg-white text-gray-600 font-bold text-2xl rounded-2xl shadow-xl focus:outline-none">
+            <button
+              className={`px-16 py-8 rounded-2xl font-bold text-2xl shadow-xl focus:outline-none transition-colors ${activeTab === 'testimonials' ? 'bg-blue-400 text-white' : 'bg-white text-gray-600'}`}
+              onClick={() => setActiveTab('testimonials')}
+            >
               Testimonials
             </button>
           </div>
 
-          {/* Experience Section */}
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-12">Experience</h2>
-            
-            <div className="space-y-12">
-
-
-              {/* Barnes & Noble */}
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                <div className="lg:col-span-3">
-                  <p className="text-gray-600 font-medium">Sep 2017 – Mar 2018</p>
-                </div>
-                <div className="lg:col-span-9">
-                  <div className="space-y-4">
-                    <div>
-                      <h3 className="text-2xl font-bold text-gray-900">Barnes & Noble</h3>
-                      <p className="text-blue-500 font-medium">Lead Automation Engineer</p>
-                    </div>
-                    <p className="text-gray-600 leading-relaxed">
-                       "Led an automation team to develop end-to-end UI regression tests for Barnes & Noble using Selenium and Cucumber.",
+          {/* Tab Content */}
+          {activeTab === 'resume' && (
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-4xl font-bold text-gray-900 mb-12">Experience</h2>
+              <div className="space-y-12">
+                {/* Barnes & Noble */}
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                  <div className="lg:col-span-3">
+                    <p className="text-gray-600 font-medium">Sep 2017 – Mar 2018</p>
+                  </div>
+                  <div className="lg:col-span-9">
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="text-2xl font-bold text-gray-900">Barnes & Noble</h3>
+                        <p className="text-blue-500 font-medium">Lead Automation Engineer</p>
+                      </div>
+                      <p className="text-gray-600 leading-relaxed">
+                        "Led an automation team to develop end-to-end UI regression tests for Barnes & Noble using Selenium and Cucumber.",
                         "Helped the team replicate production performance issues in lower environments.",
                         "Worked on creating Test estimations for the automation projects"
-                    </p>
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              {/* Meijer */}
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                <div className="lg:col-span-3">
-                  <p className="text-gray-600 font-medium">June 2016 – Sep 2017</p>
-                </div>
-                <div className="lg:col-span-9">
-                  <div className="space-y-4">
-                    <div>
-                      <h3 className="text-2xl font-bold text-gray-900">Meijer</h3>
-                      <p className="text-blue-500 font-medium">Lead Automation Engineer</p>
-                    </div>
-                    <p className="text-gray-600 leading-relaxed">
-                       "Led the development of an automation framework using Coded UI for point-of-sale systems, reducing testing time by 60% (from 5 days to 2 days) and improving efficiency.",
+                {/* Meijer */}
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                  <div className="lg:col-span-3">
+                    <p className="text-gray-600 font-medium">June 2016 – Sep 2017</p>
+                  </div>
+                  <div className="lg:col-span-9">
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="text-2xl font-bold text-gray-900">Meijer</h3>
+                        <p className="text-blue-500 font-medium">Lead Automation Engineer</p>
+                      </div>
+                      <p className="text-gray-600 leading-relaxed">
+                        "Led the development of an automation framework using Coded UI for point-of-sale systems, reducing testing time by 60% (from 5 days to 2 days) and improving efficiency.",
                         "Assisted multiple teams in setting up their initial automated tests for WPF applications",
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Target */}
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                <div className="lg:col-span-3">
-                  <p className="text-gray-600 font-medium">Jan 2015 – June 2016</p>
-                </div>
-                <div className="lg:col-span-9">
-                  <div className="space-y-4">
-                    <div>
-                      <h3 className="text-2xl font-bold text-gray-900">Target</h3>
-                      <p className="text-blue-500 font-medium">QA Automation Lead & Tester</p>
+                      </p>
                     </div>
-                    <p className="text-gray-600 leading-relaxed">
-                       "Involved in creating end-to-end regression tests using HP UFT & Selenium.",
-                        "Led teams in offshore onsite model in delivering regression automation for multiple projects.",
-                    </p>
+                  </div>
+                </div>
+                {/* Target */}
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                  <div className="lg:col-span-3">
+                    <p className="text-gray-600 font-medium">Jan 2015 – June 2016</p>
+                  </div>
+                  <div className="lg:col-span-9">
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="text-2xl font-bold text-gray-900">Target</h3>
+                        <p className="text-blue-500 font-medium">QA Automation Lead & Tester</p>
+                      </div>
+                      <p className="text-gray-600 leading-relaxed">
+                        "Involved in creating end-to-end regression tests using HP UFT & Selenium.",
+                        "Led teams in offshore onsite model in delivering regression automation for multiple projects."
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-
             </div>
-          </div>
+          )}
+          {activeTab === 'projects' && (
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-4xl font-bold text-gray-900 mb-12">Projects</h2>
+              <div className="space-y-8">
+                <div className="bg-white rounded-xl shadow p-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Portfolio Website</h3>
+                  <p className="text-gray-600">A personal portfolio built with Next.js and Tailwind CSS, deployed on Firebase Hosting.</p>
+                </div>
+                <div className="bg-white rounded-xl shadow p-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">E-commerce Automation</h3>
+                  <p className="text-gray-600">Developed automation frameworks for e-commerce platforms to streamline testing and deployment.</p>
+                </div>
+              </div>
+            </div>
+          )}
+          {activeTab === 'testimonials' && (
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-4xl font-bold text-gray-900 mb-12">Testimonials</h2>
+              <div className="space-y-8">
+                <div className="bg-white rounded-xl shadow p-8">
+                  <p className="text-gray-600 italic">“Bhargava is a detail-oriented engineer who always delivers high-quality work on time.”</p>
+                  <p className="text-gray-900 font-bold mt-4">— Project Manager, Meijer</p>
+                </div>
+                <div className="bg-white rounded-xl shadow p-8">
+                  <p className="text-gray-600 italic">“A true leader in automation and quality engineering.”</p>
+                  <p className="text-gray-900 font-bold mt-4">— QA Lead, Target</p>
+                </div>
+              </div>
+            </div>
+          )}
         </section>
       </main>
 
