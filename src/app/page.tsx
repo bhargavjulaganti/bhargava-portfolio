@@ -200,7 +200,7 @@ export default function BhargavaPortfolio() {
               <h3 className="text-2xl font-bold mb-4">Lets Work Together</h3>
               <p className="text-gray-400 mb-6">Ready to bring your next project to life? Id love to hear from you.</p>
               <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                Get In Touch
+                Get In Touch new
               </button>
             </div>
             
