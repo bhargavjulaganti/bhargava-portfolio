@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Download, Menu, X } from 'lucide-react';
+import ExperienceSection from './ExperienceSection';
 
 export default function BhargavaPortfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ export default function BhargavaPortfolio() {
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-white shadow-sm">
-       
+
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
@@ -42,6 +43,15 @@ export default function BhargavaPortfolio() {
           >
             Download Resume <Download size={18} className="ml-1" />
           </a>
+
+          {/* About Me Section */}
+          <section className="mt-20 flex flex-col items-start text-left w-full max-w-2xl mx-auto">
+            <h2 className="text-5xl font-extrabold text-gray-900 mb-4">About me</h2>
+            <p className="text-lg text-gray-600 mb-2">
+              Senior Quality Engineer with 7 years of experience in the Servicing Platform, specializing in technology implementation to enhance engineering and quality process. Started as a Quality Engineer (FOC), identifying gaps and automating processes for efficiency, leading to roles as Software Engineer and Senior Quality Engineer, driving innovation in engineering and testing spaces.
+            </p>
+          </section>
+
           {/* Skills or Stats */}
           <div className="grid grid-cols-2 gap-8 pt-8 mt-8">
             <div>
@@ -80,68 +90,7 @@ export default function BhargavaPortfolio() {
           </div>
 
           {/* Tab Content */}
-          {activeTab === 'resume' && (
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-4xl font-bold text-gray-900 mb-12">Experience</h2>
-              <div className="space-y-12">
-                {/* Barnes & Noble */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                  <div className="lg:col-span-3">
-                    <p className="text-gray-600 font-medium">Sep 2017 – Mar 2018</p>
-                  </div>
-                  <div className="lg:col-span-9">
-                    <div className="space-y-4">
-                      <div>
-                        <h3 className="text-2xl font-bold text-gray-900">Barnes & Noble</h3>
-                        <p className="text-blue-500 font-medium">Lead Automation Engineer</p>
-                      </div>
-                      <p className="text-gray-600 leading-relaxed">
-                        "Led an automation team to develop end-to-end UI regression tests for Barnes & Noble using Selenium and Cucumber.",
-                        "Helped the team replicate production performance issues in lower environments.",
-                        "Worked on creating Test estimations for the automation projects"
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                {/* Meijer */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                  <div className="lg:col-span-3">
-                    <p className="text-gray-600 font-medium">June 2016 – Sep 2017</p>
-                  </div>
-                  <div className="lg:col-span-9">
-                    <div className="space-y-4">
-                      <div>
-                        <h3 className="text-2xl font-bold text-gray-900">Meijer</h3>
-                        <p className="text-blue-500 font-medium">Lead Automation Engineer</p>
-                      </div>
-                      <p className="text-gray-600 leading-relaxed">
-                        "Led the development of an automation framework using Coded UI for point-of-sale systems, reducing testing time by 60% (from 5 days to 2 days) and improving efficiency.",
-                        "Assisted multiple teams in setting up their initial automated tests for WPF applications",
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                {/* Target */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                  <div className="lg:col-span-3">
-                    <p className="text-gray-600 font-medium">Jan 2015 – June 2016</p>
-                  </div>
-                  <div className="lg:col-span-9">
-                    <div className="space-y-4">
-                      <div>
-                        <h3 className="text-2xl font-bold text-gray-900">Target</h3>
-                        <p className="text-blue-500 font-medium">QA Automation Lead & Tester</p>
-                      </div>
-                      <p className="text-gray-600 leading-relaxed">
-                        "Involved in creating end-to-end regression tests using HP UFT & Selenium.",
-                        "Led teams in offshore onsite model in delivering regression automation for multiple projects."
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
+          {activeTab === 'resume' && <ExperienceSection activeTab={activeTab} />}
           {activeTab === 'projects' && (
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl font-bold text-gray-900 mb-12">Projects</h2>
@@ -186,7 +135,7 @@ export default function BhargavaPortfolio() {
                 Get In Touch new
               </button>
             </div>
-            
+
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-400">
@@ -196,7 +145,7 @@ export default function BhargavaPortfolio() {
                 <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
               </ul>
             </div>
-            
+
             <div>
               <h4 className="font-semibold mb-4">Connect</h4>
               <ul className="space-y-2 text-gray-400">
@@ -207,7 +156,7 @@ export default function BhargavaPortfolio() {
               </ul>
             </div>
           </div>
-          
+
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>&copy; 2025 Bhargava Julaganti. All rights reserved.</p>
           </div>
