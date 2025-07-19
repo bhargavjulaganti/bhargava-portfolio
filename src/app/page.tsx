@@ -5,7 +5,7 @@ import { Download } from 'lucide-react';
 import ExperienceSection from './ExperienceSection';
 
 export default function BhargavaPortfolio() {
-  const [activeTab, setActiveTab] = useState<'resume' | 'projects' | 'testimonials'>('resume');
+  const [activeTab, setActiveTab] = useState<'resume' | 'projects' | 'testimonials' | 'certifications'>('resume');
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -22,7 +22,7 @@ export default function BhargavaPortfolio() {
           </h1>
           <p className="text-xl text-gray-600 mt-4">Senior Quality Engineer</p>
           <a
-            href="/resume.pdf"
+            href="/BhargavJulaganti.docx"
             className="text-blue-600 font-semibold text-lg hover:underline flex items-center gap-1 justify-center mt-4"
             target="_blank"
             rel="noopener noreferrer"
@@ -71,17 +71,23 @@ export default function BhargavaPortfolio() {
             >
               Resume
             </button>
-            <button
+            {/* <button
               className={`px-16 py-8 rounded-2xl font-bold text-2xl shadow-xl focus:outline-none transition-colors ${activeTab === 'projects' ? 'bg-blue-400 text-white' : 'bg-white text-gray-600'}`}
               onClick={() => setActiveTab('projects')}
             >
               Projects
-            </button>
-            <button
+            </button> */}
+            {/* <button
               className={`px-16 py-8 rounded-2xl font-bold text-2xl shadow-xl focus:outline-none transition-colors ${activeTab === 'testimonials' ? 'bg-blue-400 text-white' : 'bg-white text-gray-600'}`}
               onClick={() => setActiveTab('testimonials')}
             >
               Testimonials
+            </button> */}
+            <button
+              className={`px-16 py-8 rounded-2xl font-bold text-2xl shadow-xl focus:outline-none transition-colors ${activeTab === 'certifications' ? 'bg-blue-400 text-white' : 'bg-white text-gray-600'}`}
+              onClick={() => setActiveTab('certifications')}
+            >
+              Certifications
             </button>
           </div>
 
@@ -117,6 +123,19 @@ export default function BhargavaPortfolio() {
               </div>
             </div>
           )}
+          {activeTab === 'certifications' && (
+            <div className="max-w-2xl mx-auto">
+              <h2 className="text-4xl font-bold text-gray-900 mb-12">Certifications</h2>
+              <div className="bg-white rounded-xl shadow p-8 flex items-center gap-6">
+                <img src="/aws-certified-cloud-practitioner.png" alt="AWS Cloud Practitioner" className="w-20 h-20 object-contain" />
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-1">AWS Certified Cloud Practitioner</h3>
+                  <p className="text-gray-600">Amazon Web Services (AWS)</p>
+                  <a href="https://www.credly.com/badges/e51f2383-a18b-4080-a7e0-c7feb27876b2/public_url" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium mt-2 inline-block">View Credential</a>
+                </div>
+              </div>
+            </div>
+          )}
         </section>
       </main>
 
@@ -124,15 +143,15 @@ export default function BhargavaPortfolio() {
       <footer className="bg-gray-900 text-white mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="col-span-1 md:col-span-2">
+            {/* <div className="col-span-1 md:col-span-2">
               <h3 className="text-2xl font-bold mb-4">Lets Work Together</h3>
               <p className="text-gray-400 mb-6">Ready to bring your next project to life? Id love to hear from you.</p>
               <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
                 Get In Touch new
               </button>
-            </div>
+            </div> */}
 
-            <div>
+            {/* <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white transition-colors">Home</a></li>
@@ -140,9 +159,9 @@ export default function BhargavaPortfolio() {
                 <li><a href="#" className="hover:text-white transition-colors">Work</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
               </ul>
-            </div>
+            </div> */}
 
-            <div>
+            {/* <div>
               <h4 className="font-semibold mb-4">Connect</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white transition-colors">LinkedIn</a></li>
@@ -150,12 +169,12 @@ export default function BhargavaPortfolio() {
                 <li><a href="#" className="hover:text-white transition-colors">Dribbble</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Behance</a></li>
               </ul>
-            </div>
-          </div>
+            </div>*/}
+          </div> 
 
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          {/* <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>&copy; 2025 Bhargava Julaganti. All rights reserved.</p>
-          </div>
+          </div> */}
         </div>
       </footer>
     </div>

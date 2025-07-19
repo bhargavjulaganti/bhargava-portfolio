@@ -1,0 +1,49 @@
+[
+    {
+        "company": "ROCKET MORTGAGE",
+        "role": "Senior Quality Engineer",
+        "date": "Mar 2018 – Present",
+        "bullets": [
+            "Built an AI-driven platform to automate critical engineering workflows, enabling self-service across teams and saving over 1,100 engineering hours.",
+            "Developed testing framework with service virtualization and automated infrastructure management that accelerated feedback cycles by enabling continuous testing.",
+            "Created a comprehensive playwright test suite for rocket mortgage servicing website with CI/CD integration that reduced regression and manual testing efforts by 60% per sprint.",
+            "Standardized performance testing across engineering teams by delivering a K6 template for CI/CD pipelines; adopted by 30+ microservices and improved visibility into performance regressions."
+        ]
+    },
+    {
+        "company": "BARNES & NOBLE",
+        "role": "Lead Automation Engineer",
+        "date": "Sep 2017 – Mar 2018",
+        "bullets": [
+            "Led 5-member team to automate and maintain 1200+ tests for BarnesAndNoble.com using selenium, reviewed daily runs and reported defects tied to feature updates.",
+            "Supported root cause analysis by replicating production performance issues in lower environments and contributed to test estimation and planning for automation initiatives."
+        ]
+    },
+    {
+        "company": "MEIJER",
+        "role": "Lead Automation Engineer",
+        "date": "June 2016 – Sep 2017",
+        "bullets": [
+            "Involved in creating end-to-end regression tests using HP UFT & Selenium.",
+            "Led teams in offshore onsite model in delivering regression automation for multiple projects."
+        ]
+    },
+    {
+        "company": "TARGET",
+        "role": "QA Automation Lead & Tester",
+        "date": "Jan 2015 – June 2016",
+        "bullets": [
+            "Involved in creating end-to-end regression tests using HP UFT & Selenium.",
+            "Led teams in offshore onsite model in delivering regression automation for multiple projects."
+        ]
+    },
+    {
+        "company": "TATA CONSULTANCY SERVICES",
+        "role": "Test Engineer",
+        "date": "Oct 2011 – Dec 2015",
+        "bullets": [
+            "Responsible for running ETL jobs and load test data into lower environments.",
+            "Responsible for executing functional and end-to-end manual test cases."
+        ]
+    }
+]
