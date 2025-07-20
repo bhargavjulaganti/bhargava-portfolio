@@ -22,7 +22,7 @@ export default function BhargavaPortfolio() {
           </h1>
           <p className="text-xl text-gray-600 mt-4">Senior Quality Engineer</p>
           <a
-            href="/BhargavJulaganti.docx"
+            href="/BhargavaJulaganti.pdf"
             className="text-blue-600 font-semibold text-lg hover:underline flex items-center gap-1 justify-center mt-4"
             target="_blank"
             rel="noopener noreferrer"
@@ -34,7 +34,7 @@ export default function BhargavaPortfolio() {
           <section className="mt-20 flex flex-col items-start text-left w-full max-w-2xl mx-auto">
             <h2 className="text-5xl font-extrabold text-gray-900 mb-4">About me</h2>
             <p className="text-lg text-gray-600 mb-2">
-              Senior Quality Engineer with 7 years of experience in the Servicing Platform, specializing in technology implementation to enhance engineering and quality process. Started as a Quality Engineer (FOC), identifying gaps and automating processes for efficiency, leading to roles as Software Engineer and Senior Quality Engineer, driving innovation in engineering and testing spaces.
+              Senior Quality Engineer with over a decade of experience in test automation, performance engineering, and platform efficiency. I specialize in building scalable QA frameworks, AI-driven developer tools, and CI/CD pipelines that accelerate software delivery. Passionate about solving real-world engineering problems, I’ve led cross-functional teams and saved thousands of engineering hours through intelligent automation and process optimization.
             </p>
           </section>
 
